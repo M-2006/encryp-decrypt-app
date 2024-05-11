@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Card styles */
+.card {
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Form styles */
+.form-label {
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+    margin-top: 15px;
+}
+
+/* Dark mode toggle styles */
+.form-check-label {
+    font-weight: bold;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-check-label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Dark mode styles */
+.dark-mode .form-check-label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Navbar styles for dark mode */
+.navbar-dark-mode {
+    background-color: #333 !important;
+    transition: background-color 0.5s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+/* Responsive styles */
+@media (max-width: 650px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    .form-check {
+        margin-top: 15px;
+    }
+    .footer {
+        margin-top: auto; /* Push footer to the bottom for mobile view */
+    }
+}
+
+/* Footer styles for desktop view */
+@media (min-width: 651px) {
+    .footer {
+        background-color: hsl(0, 0%, 20%);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+}
